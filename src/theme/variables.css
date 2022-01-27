@@ -1,9 +1,30 @@
 /* Ionic Variables and Theming. For more info, please see:
 http://ionicframework.com/docs/theming/ */
 
+
+
 /** Ionic CSS Variables **/
 :root {
-  /** primary **/
+
+  /** defaults **/
+  --ion-background-color: #FFFFFF;
+  --ion-background-color-rgb: 107,141,230;  
+  --ion-text-color: rgb(85, 85, 85);
+  --ion-text-color-rgb: 255,255,255;
+
+  --ion-tab-bar-border-color: #FFFFFF;
+  --ion-tab-bar-background: #FFFFFF;
+  --ion-tab-bar-color: #a0a0a0;
+  --ion-tab-bar-color-selected: #6B8DE6;
+
+  /** custom **/
+  --ion-color-custom-grey: #4F5566;
+  --ion-color-custom-blue-darker: #303F66;
+  --ion-color-custom-blue-dark: #546FB3;
+  --ion-color-custom-blue-light: #6B8DE6;
+  --ion-color-custom-blue-lighter: #B4C3EA;
+
+  /** secondary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
   --ion-color-primary-contrast: #ffffff;
@@ -81,7 +102,7 @@ http://ionicframework.com/docs/theming/ */
    * Dark Colors
    * -------------------------------------------
    */
-
+/* 
   body {
     --ion-color-primary: #428cff;
     --ion-color-primary-rgb: 66,140,255;
@@ -151,14 +172,8 @@ http://ionicframework.com/docs/theming/ */
    * iOS Dark Theme
    * -------------------------------------------
    */
-
+/*
   .ios body {
-    --ion-background-color: #000000;
-    --ion-background-color-rgb: 0,0,0;
-
-    --ion-text-color: #ffffff;
-    --ion-text-color-rgb: 255,255,255;
-
     --ion-color-step-50: #0d0d0d;
     --ion-color-step-100: #1a1a1a;
     --ion-color-step-150: #262626;
@@ -195,14 +210,8 @@ http://ionicframework.com/docs/theming/ */
    * Material Design Dark Theme
    * -------------------------------------------
    */
-
+/*
   .md body {
-    --ion-background-color: #121212;
-    --ion-background-color-rgb: 18,18,18;
-
-    --ion-text-color: #ffffff;
-    --ion-text-color-rgb: 255,255,255;
-
     --ion-border-color: #222222;
 
     --ion-color-step-50: #1e1e1e;
@@ -229,8 +238,7 @@ http://ionicframework.com/docs/theming/ */
 
     --ion-toolbar-background: #1f1f1f;
 
-    --ion-tab-bar-background: #1f1f1f;
 
     --ion-card-background: #1e1e1e;
-  }
+  } */
 }

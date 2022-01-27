@@ -23,6 +23,7 @@ export default {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+  height: 200vh;
 }
 
 #container strong {

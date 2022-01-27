@@ -3,19 +3,21 @@
     <ion-tabs>
       <ion-router-outlet></ion-router-outlet>
       <ion-tab-bar slot="bottom">
-        <ion-tab-button tab="tab1" href="/tabs/tab1">
-          <ion-icon :icon="triangle" />
-          <ion-label>Tab 1</ion-label>
-        </ion-tab-button>
-          
-        <ion-tab-button tab="tab2" href="/tabs/tab2">
-          <ion-icon :icon="ellipse" />
-          <ion-label>Tab 2</ion-label>
+        
+        <ion-tab-button tab="tab-my-home" href="/tabs/tab-my-home">
+          <ion-icon :icon="homeSharp" />
+          <ion-label>My Home</ion-label>
         </ion-tab-button>
         
-        <ion-tab-button tab="tab3" href="/tabs/tab3">
-          <ion-icon :icon="square" />
-          <ion-label>Tab 3</ion-label>
+        <ion-tab-button tab="tab-tasks" href="/tabs/tab-tasks">
+          <ion-icon :icon="listSharp" />
+          <ion-label>Tasks</ion-label>
+        </ion-tab-button>
+          
+        
+        <ion-tab-button tab="tab-me" href="/tabs/tab-me">
+          <ion-icon :icon="personCircleSharp" />
+          <ion-label>Me</ion-label>
         </ion-tab-button>
       </ion-tab-bar>
     </ion-tabs>
@@ -24,16 +26,21 @@
 
 <script lang="ts">
 import { IonTabBar, IonTabButton, IonTabs, IonLabel, IonIcon, IonPage, IonRouterOutlet } from '@ionic/vue';
-import { ellipse, square, triangle } from 'ionicons/icons';
+import { personCircleSharp, listSharp, homeSharp } from 'ionicons/icons';
 
 export default {
   components: { IonLabel, IonTabs, IonTabBar, IonTabButton, IonIcon, IonPage, IonRouterOutlet },
   setup() {
     return {
-      ellipse, 
-      square, 
-      triangle,
+      personCircleSharp, 
+      listSharp, 
+      homeSharp,
     }
   }
 }
 </script>
+<style>
+ion-tab-bar {
+  box-shadow: 0px 0px 10px #e9e9e9
+}
+</style>

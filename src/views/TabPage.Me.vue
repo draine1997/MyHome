@@ -1,6 +1,6 @@
 <template>
   <ion-page>
-    <ion-header>
+    <ion-header :translucent="true">
       <ion-toolbar>
         <ion-title>Me</ion-title>
       </ion-toolbar>
@@ -12,16 +12,29 @@
         </ion-toolbar>
       </ion-header>
       
-      <ExploreContainer name="Me page" />
+      <div class="me">
+      <ion-icon :icon="personCircleSharp" ></ion-icon>
+      </div>
+
     </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts">
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
-import ExploreContainer from '@/components/ExploreContainer.vue';
+import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonIcon } from '@ionic/vue';
+import { personCircleSharp } from 'ionicons/icons';
 
 export default  {
-  components: { ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
+  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonIcon },
+  setup() {
+    return {
+      personCircleSharp, 
+    }
+  }
 }
 </script>
+<style>
+.me ion-icon {
+  font-size: 128px;
+}
+</style>

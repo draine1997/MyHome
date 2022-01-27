@@ -17,6 +17,8 @@ http://ionicframework.com/docs/theming/ */
   --ion-tab-bar-color: #a0a0a0;
   --ion-tab-bar-color-selected: #6B8DE6;
 
+  --ion-grid-padding: 16px;
+
   /** custom **/
   --ion-color-custom-grey: #4F5566;
   --ion-color-custom-blue-darker: #303F66;
